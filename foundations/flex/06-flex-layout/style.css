@@ -5,8 +5,14 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /*My Added Styles*/
   display: flex;
   flex-direction: column;
+  /* 
+  Solution added: 
+  display: flex;
+  flex-direction: column;
+  */
 }
 
 img {
@@ -14,20 +20,35 @@ img {
 }
 
 a {
+  /*My Added Styles*/
   text-decoration: none;
   color: #666666;
+  /*
+  Solution Added: 
+  color: #666;
+  text-decoration: none;
+  */
 }
 
 ul {
+  /*My Added Styles*/
   list-style-type: none;
   display: flex;
   flex: 1;
-  border: purple 1px solid;
   margin: 0;
   padding: 0;
+  /*
+  Solution added: 
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  */
 }
 
 li {
+  /*My Added Styles*/
   margin: 8px;
 }
 
@@ -36,6 +57,10 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*
+  Solution added: 
+  padding: 8px 16px;
+  */
 }
 
 input {
@@ -43,40 +68,64 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  /*My Added Styles*/
   margin-bottom: 16px;
   margin-top: 16px;
 }
 
+.content {
+  /*My Added Styles*/
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /*
+  Solution added: 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  */
+}
+
+/*
+Solution added: combined .header/.footer:
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+*/
+
 .header {
-  border: black 1px solid;
+  /*My Added Styles*/
   flex: 1;
   display: flex;
   justify-content: space-between;
   max-height: fit-content;
 }
 
-.content {
-  flex: 1;
-  border: blue 1px solid;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .footer {
+  /*My Added Styles*/
   flex: 1;
-  border: red 1px solid;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   background-color: #eeeeee;
   padding: 8px;
   max-height: fit-content;
+  /*
+  Solution added: 
+  background: #eee;
+  */
 }
 
 .right-links {
+  /*My Added Styles*/
   flex: 1;
   justify-content: flex-end;
 }
