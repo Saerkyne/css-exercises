@@ -16,3 +16,7 @@ Depending on how you approach this one, you might need to revisit the `flex-shri
 - The header, text, and buttons are aligned with each other.
 - The header is bold and a slightly larger text-size than the text.
 - The close button is vertically aligned with the header, and aligned in the top-right of the card.
+
+
+## UPDATE
+My CSS does work, but it isn't as clean as the solution. I added a few different div containers where the solution focused on only one extra div. Right outcome, different paths. 
