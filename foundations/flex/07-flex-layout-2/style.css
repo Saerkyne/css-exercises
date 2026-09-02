@@ -33,11 +33,15 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* not included in solution*/
 }
 
 .header {
   display: flex;
+  /*
+  Solution: 
+  padding: 0 16px;
+  */
   font-size: 32px;
   font-weight: 900;
   align-items: center;
@@ -49,17 +53,24 @@ body {
 }
 
 .sidebar {
-  flex-grow: 0;
+  flex-grow: 0; /*Not included in Solution*/
   flex-shrink: 0;
-  flex-basis: 300px;
+  flex-basis: 300px; /*Not included in Solution*/
   padding: 16px;
 }
 
-.sidebar a {
+.sidebar a { /*Solution doesn't include .sidebar class selector*/
   font-size: 24px;
   color: white;
   text-decoration: none;
 }
+
+/*
+Solution: 
+li {
+  margin-bottom: 16px;
+}
+*/
 
 ul {
   list-style: none;
@@ -68,23 +79,28 @@ ul {
 }
 
 .content {
-  flex: 1;
+  flex: 1; /*Not included in solution*/
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-evenly; /*Not included in solution*/
+  align-items: center; /*Not included in solution*/
+  /*
+  Solution: 
+  padding: 48px;
+  gap: 32px;
+  */
 }
 
 .card {
-  padding: 48px;
-  height: 250px;
-  width: 250px;
+  padding: 48px; /*Solution uses 16px*/
+  height: 250px; /*Solution doesn't specify*/
+  width: 250px; /*Solution uses 250px*/
 }
 
 .footer {
-  flex: 1;
+  flex: 1; /*Not included in solution*/
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 48px;
+  max-height: 48px; /*Not included in Solution*/
 }

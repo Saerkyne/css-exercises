@@ -33,3 +33,9 @@ Note: The emojis may instead show up as one or several text symbols (e.g. &#9734
 - The sidebar has 16px padding.
 - There is 48px padding around the 'cards' section.
 - The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page.
+
+
+## UPDATE
+So, I did decently. The only thing that is blatantly wrong is how the content cards organize themselves - mine has them evenly spaced and therefore when a new line is made, whatever cards on the second line are evenly spaced instead of left-aligned as in the solution. 
+
+Some padding sizes are changed, or are put in a different place, but the functionality is there regardless. Less best-practice failures, but a functional one. 
